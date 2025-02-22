@@ -15,4 +15,9 @@ Una sencilla aplicación web para sortear al "Amigo Secreto" de forma aleatoria.
 - **JavaScript:** Lógica para el manejo de eventos, manipulación del DOM y el sorteo.
 
 ## Estructura del Proyecto
-├── index.html # Estructura de la página web. ├── style.css # Estilos y diseño visual. ├── app.js # Lógica del sorteo y manipulación de la lista de amigos. └── assets/ # Imágenes e íconos utilizados en la aplicación. ├── amigo-secreto.png └── play_circle_outline.png
+├── index.html  
+├── style.css
+├── app.js 
+└── assets/ 
+  ├── amigo-secreto.png 
+  └── play_circle_outline.png
