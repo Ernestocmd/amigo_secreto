@@ -21,3 +21,17 @@ Una sencilla aplicación web para sortear al "Amigo Secreto" de forma aleatoria.
 └── assets/ 
   ├── amigo-secreto.png 
   └── play_circle_outline.png
+
+## Instalación y Uso
+
+1. **Clonar el repositorio:**
+
+   ```bash
+   git clone https://github.com/tu-usuario/amigo-secreto.git
+2. **Abrir el proyecto:**
+   - Navega a la carpeta del proyecto y abre el archivo index.html en tu navegador web.
+3. **Uso de la aplicación:**
+   - Ingresa un nombre en el campo de texto y presiona el botón "Añadir" o la tecla Enter.
+   - Visualiza los nombres en la lista.
+   - Cuando tengas al menos dos nombres, haz clic en el botón "Sortear amigo" para realizar el sorteo.
+   - El nombre seleccionado se mostrará con una animación y se eliminará de la lista.
