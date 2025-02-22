@@ -16,7 +16,6 @@ Una sencilla aplicación web para sortear al "Amigo Secreto" de forma aleatoria.
 
 ## Estructura del Proyecto
 <pre>
-.
 ├── index.html
 ├── style.css
 ├── app.js
