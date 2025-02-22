@@ -7,9 +7,14 @@ function agregarAmigo(){
     
     if(nombreAmigo === ''){
         alert('Por favor, inserte un nombre.');
+        return;
+    } else if(amigos.includes(nombreAmigo)) {
+        alert('No se pueden repetir nombres.');
+        return;
     } else {
         amigos.push(nombreAmigo);
     }
+    
     limpiarCampo();
     actulizarAmigos();
     return;
@@ -35,10 +40,27 @@ function sortearAmigo(){
     if(amigos.length === 0){
         alert('No se han ingresado nombres para sortear.');
         return;
-    } 
-    let numeroRandom = Math.floor(Math.random()*amigos.length);
-    let nombreAmigo = amigos[numeroRandom];
+    }
+    if(amigos.length < 2){
+        alert('Debes ingresar al menos dos nombres para sortear.');
+        return;
+    }
+    
+    let counter = 0;
+    resultado.classList.remove("fade-in");
 
-    resultado.innerHTML = `<li>El amigo secreto es: ${nombreAmigo}</li>`; 
+    let intervalo = setInterval(() => {
+        let random = Math.floor(Math.random()*amigos.length);
+        resultado.textContent = `El amigo secreto es: ${amigos[random]}`;
 
+        counter++;
+        if (counter > 20) {
+            clearInterval(intervalo);
+
+            amigos.splice(random, 1);
+            actulizarAmigos();
+
+            resultado.classList.add("fade-in");
+        }
+    }, 100);
 }
