@@ -64,3 +64,10 @@ function sortearAmigo(){
         }
     }, 100);
 }
+
+document.getElementById('amigo').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        agregarAmigo();
+        event.preventDefault();
+    }
+});
